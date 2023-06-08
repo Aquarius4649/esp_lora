@@ -12,11 +12,16 @@ void setup(){
 int count = 0;
 
 void PortWrite(String str){
-  Serial2.println(str);
+  Serial.println(str);
   delay(100);
 }
 
 void loop(){
-  Serial.println(ping_program);
+  PortWrite(ReceiveProgram);
+  while (Serial2.available())
+  {
+    data = Serial2.read();
+    Serial.write(data);
+  }
   delay(1000);
 }
