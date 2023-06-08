@@ -23,11 +23,11 @@ void ArrayPortWrite(String str[], int num){
   }
 }
 
+int data;
 void loop(){
   String str[3] = {"Hello", "World", "!"};
   ArrayPortWrite(str, 3);
-  while (Serial2.available())
-  {
+  while (Serial2.available()){
     data = Serial2.read();
     Serial.write(data);
   }
