@@ -8,14 +8,16 @@ void setup()
   // Lora_Serial2のポートレートはデフォルトで9600
 }
 
+int count =0
 void loop()
 {
   // main func
   int data = 0;
+  count++;
   Serial.println("edit 1");
-  Serial.println("10 Uprint \"from Lora \r\n\"");
-  Serial.println("run");
+  Serial.println("10 Uprint \"from Lora\ ");
   Serial.println("edit 0");
+  Serial.println("run");
   delay(3000);
   while (Serial2.available())
   {
