@@ -9,9 +9,11 @@ void setup()
 }
 
 int count =0;
+
 void loop()
 {
   // main func
+  String a = String("hello");
   int data = 0;
   count++;
   Serial.println("edit 1");
@@ -27,6 +29,6 @@ void loop()
     Serial.write(data);
   }
   // a = Serial.read();
-  Serial.write("hello \r\n");
+  Serial.println(a);
   delay(3000);
 }
