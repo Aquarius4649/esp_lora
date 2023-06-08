@@ -16,17 +16,15 @@ void PortWrite(String str){
   delay(100);
 }
 
-void ArrayPortWrite(String str[], int num){
+void ArrayPortWrite(const char* str[], int num){
   for(int i = 0; i < num; i++){
-    Serial.println(str[i]);
-    delay(100);
+    PortWrite(String(str[i]));
   }
 }
 
 int data;
 void loop(){
-  String str[3] = {"Hello", "World", "!"};
-  ArrayPortWrite(str, 3);
+  ArrayPortWrite(ReceiveProgram, 2);
   while (Serial2.available()){
     data = Serial2.read();
     Serial.write(data);
