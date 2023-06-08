@@ -15,7 +15,10 @@ void loop()
   int data = 0;
   count++;
   Serial.println("edit 1");
-  Serial.println("10 Uprint \"from Lora\ ");
+  Serial.println("10 Uprint \"from Lora\"");
+  Serial.print("20 Uprint \"count=");
+  Serial.print(count);
+  Serial.println("\"");
   Serial.println("edit 0");
   Serial.println("run");
   delay(3000);
