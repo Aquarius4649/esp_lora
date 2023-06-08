@@ -1,4 +1,4 @@
-#include "resource.h"
+#include "./resource.h"
 
 int RX_PIN = 16;
 int TX_PIN = 17;
