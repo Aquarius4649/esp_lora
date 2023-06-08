@@ -1,3 +1,5 @@
+#include "resource.h"
+
 int RX_PIN = 16;
 int TX_PIN = 17;
 
@@ -15,8 +17,6 @@ void PortWrite(String str){
 }
 
 void loop(){
-  String a[8] = {"a", "b", "c", "d", "e", "f", "g", "h"}; 
-  for(int i = 0; i < 8; i++){
-    Serial.println(a[i]);
-  }
+  Serial.println(ping_program);
+  delay(1000);
 }
