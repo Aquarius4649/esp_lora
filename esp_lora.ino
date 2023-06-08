@@ -13,7 +13,7 @@ void loop()
   // main func
   int data = 0;
   Serial.println("edit 1");
-  Serial.println("10 Uprint \"from Lora\r\n\"");
+  Serial.println("10 Uprint \"from Lora \r\n\"");
   Serial.println("run");
   Serial.println("edit 0");
   delay(3000);
