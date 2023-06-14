@@ -24,7 +24,7 @@ void ArrayPortWrite(const char* str[], int num){
 
 int data;
 void loop(){
-  ArrayPortWrite(ReceiveProgram, 2);
+  ArrayPortWrite(ceiveProgram, 2)
   while (Serial2.available()){
     data = Serial2.read();
     Serial.write(data);
